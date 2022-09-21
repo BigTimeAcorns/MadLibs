@@ -1,1 +1,3 @@
-ghfh
+public class MadLibs{
+    
+}
