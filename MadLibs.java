@@ -8,13 +8,17 @@ A Madlib program that can be used for any story outline
 
 
 import java.util.Scanner;
+
 public class MadLibs{
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
 
         //Sory template
-        String story = "I went to the animal <noun>, the <plural_noun> and the <number> beasts were there.";
+        String[] madlib = {"I went to the animal <noun>, the <plural_noun> and the <number> beasts were there.", "Once upon a time in a <adjective> land, a <noun> <adverb> grew", "The <adjective> <color> <noun> <verb> over the <adjective> <noun>"};
+
+        //Picks a random story
+        String story = madlib[(int)(3 * Math.random())];
 
         //Runs until there are no more blank spots
         while (story.contains("<")) {
